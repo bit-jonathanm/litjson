@@ -156,6 +156,9 @@ namespace LitJson
 
             RegisterBaseExporters ();
             RegisterBaseImporters ();
+
+            //Customer Importer: https://github.com/lbv/litjson/issues/30
+            RegisterImporter((int value) => (long)value);
         }
         #endregion
 
